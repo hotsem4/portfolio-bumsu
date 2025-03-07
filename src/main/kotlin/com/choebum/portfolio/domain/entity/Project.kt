@@ -35,15 +35,16 @@ class Project(
     @OneToMany(
         targetEntity = ProjectDetail::class,
         fetch = FetchType.LAZY,
-        cascade = [CascadeType.ALL],
+        cascade = [CascadeType.PERSIST],
     )
     @JoinColumn(name = "project_id")
     var details: MutableList<ProjectDetail> = mutableListOf()
 
 
     @OneToMany(
-        targetEntity = ProjectSkill::class,
         mappedBy = "project",
+        fetch = FetchType.LAZY,
+        cascade = [CascadeType.PERSIST],
     )
     var skills: MutableList<ProjectSkill> = mutableListOf()
 
