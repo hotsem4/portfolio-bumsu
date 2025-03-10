@@ -15,7 +15,7 @@ class Link(
 
     var name: String = name
 
-    var description: String? = content
+    var content: String = content
 
     var isActive: Boolean = isActive
 }
