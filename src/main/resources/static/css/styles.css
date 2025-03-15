@@ -4167,7 +4167,8 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-font-size: 2rem;
+  --bs-nav-link-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -13353,7 +13354,7 @@ html {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  
+
 }
 
 .profile .dots-1 {
@@ -13522,5 +13523,4 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
-
 }
