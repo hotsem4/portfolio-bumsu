@@ -31,15 +31,12 @@
             <div class="profile bg-gradient-primary-to-secondary">
               <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
               <!-- Watch a tutorial on how to do this on YouTube (link)-->
-              <img alt="..." class="profile-img" src="assets/resize-pro.png" style="width: 600px; height: auto"/>
+              <img alt="..." class="profile-img" src="assets/resize-pro.png"/>
               <div th:replace="~{presentation/fragments/fragment-dots :: dots1}"></div>
               <div th:replace="~{presentation/fragments/fragment-dots :: dots2}"></div>
               <div th:replace="~{presentation/fragments/fragment-dots :: dots3}"></div>
               <div th:replace="~{presentation/fragments/fragment-dots :: dots4}"></div>
-
-
               <!-- END of SVG dots-->
-              </div>
             </div>
           </div>
         </div>
@@ -55,9 +52,12 @@
             <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">저는</span>
             </h2>
             <p class="mb-4"></p>
-            <p class="text-muted" th:each="introduction : ${introductions}" th:text="${introduction.content}">Lorem ipsum dolor sit amet</p>
+            <p class="text-muted" th:each="introduction : ${introductions}"
+               th:text="${introduction.content}">Lorem ipsum dolor sit amet</p>
             <div class="d-flex justify-content-center fs-2 gap-4">
-              <a class="text-gradient" href="#!" target="_blank" th:each="link: ${links}" th:href="${link.content}"><i class="bi bi-twitter" th:class="|bi bi-${link.name}|"></i></a>
+              <a class="text-gradient" href="#!" target="_blank" th:each="link: ${links}"
+                 th:href="${link.content}"><i class="bi bi-twitter"
+                                              th:class="|bi bi-${link.name}|"></i></a>
             </div>
           </div>
         </div>
